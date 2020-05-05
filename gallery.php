@@ -24,19 +24,13 @@
                                 <div class="box-header with-border">
                                     <div><img src="img\imagegallerylogo.png" alt="Image Gallery Logo"></div>
                                     <div><b>Upload Images to Build Your Gallery</b></div>
-                                    <!-- <div class="box-tools pull-right">
-                                        <button type="button" class="btn btn-danger btn-xs remove-preview">
-                                            <i class="fa fa-times-circle"></i> Reset This Form
-                                        </button>
-                                    </div> -->
                                 </div>
                                 <div class="box-body"></div>
                             </div>
                         </div>
                         <div class="dropzone-wrapper">
                             <div class="dropzone-desc">
-                                <i class="glyphicon glyphicon-download-alt"></i>
-                                <p>Choose an image file <br>or drag it here.</p>
+                                <p>Click to choose an image file <br>or drag it here for upload.</p>
                             </div>
                             <input type="file" name="file_upload" class="dropzone">
                         </div>
