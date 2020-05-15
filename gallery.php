@@ -1,7 +1,9 @@
 <?php require_once 'inc/functions.inc.php' ?>
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Author: Allison Drake
+Assignment: Lab 5 Expand Image Gallery
+Class: CTEC 227 PHP -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
