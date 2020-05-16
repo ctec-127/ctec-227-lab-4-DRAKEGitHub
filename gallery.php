@@ -55,8 +55,8 @@ Class: CTEC 227 PHP -->
 
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex flex-wrap flex-row align-items-center justify-content-between">
-                <?php display_images(); ?>
+            <div class="col-12 d-flex flex-wrap flex-row align-items-center justify-content-center">
+            <?php display_images(); ?>
             </div>
         </div>
     </div>

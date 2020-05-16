@@ -51,7 +51,7 @@ function display_images()
             while ($filename = readdir($dir_handle)) {
                 if (!is_dir($filename) && $filename != '.DS_Store') {
                     $filename = urlencode($filename);
-                    echo "<div class=\"card text-info\"><img src=\"uploads/$filename\" alt=\"A photo\">
+                    echo "<div class=\"card m-1 text-info\"><img src=\"uploads/$filename\" alt=\"A photo\">
                     <a class=\" btn text-info\" href=\"?file=$filename\">Delete Image <i class=\"fa fa-trash\"></i>
                     </a></div>";
 
