@@ -1,9 +1,10 @@
 body {
     background-color: #91b0b3;
+    height: 100%;
 }
 
 .container {
-    padding: 50px 10%;
+    padding: 10px 5%;
 }
 
 img {

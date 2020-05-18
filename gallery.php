@@ -1,19 +1,13 @@
-<?php require_once 'inc/functions.inc.php' ?>
-<!DOCTYPE html>
-<html lang="en">
-<!-- Author: Allison Drake
-Assignment: Lab 5 Expand Image Gallery
-Class: CTEC 227 PHP -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drag/Drop File Upload Demo</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-</head>
-<body>
+<?php 
+session_start();
+require_once 'inc/functions.inc.php';
+require_once 'inc/header.inc.php';
+require_once 'inc/nav.inc.php';
+require_once 'inc/file_uploader.inc.php';
+// home.php
+$pageTitle = 'gallery';
+?>
+<div id="message"></div>
 <div class="container">
     <form action="<?= $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
         <div class="container">
@@ -25,6 +19,9 @@ Class: CTEC 227 PHP -->
                             <div class="box box-solid">
                                 <div class="box-header with-border">
                                     <div><img src="img\imagegallerylogo.png" alt="Image Gallery Logo"></div>
+                                    <div><b><h1>Hello, <?= isset($_SESSION['first_name']) ? $_SESSION['first_name'] : 'New User!' ?></h1>
+</b></div>
+                                    <br>
                                     <div><b>Upload Images to Build Your Gallery</b></div>
                                 </div>
                                 <div class="box-body"></div>
@@ -32,7 +29,7 @@ Class: CTEC 227 PHP -->
                         </div>
                         <div class="dropzone-wrapper">
                             <div class="dropzone-desc">
-                                <p>Click to choose an image file <br>or drag it here for upload.</p>
+                            <p>Click here or drag in a file for upload</p>
                             </div>
                             <input type="file" name="file_upload" class="dropzone">
                         </div>
@@ -61,6 +58,5 @@ Class: CTEC 227 PHP -->
         </div>
     </div>
 </div>
+<?php require_once 'inc/footer.inc.php'?>
 <script src="script.js"></script>
-</body>
-</html>
