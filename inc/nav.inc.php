@@ -11,7 +11,4 @@
   <li class="nav-item">
   <a class="nav-link active" id="registerbtn" href="registration.php"><button type="button" class="btn btn-info">Register</button></a>
   </li>
-  <li class="nav-item">
-  <a class="nav-link active" id="myGallery" href="gallery.php"><button type="button" class="btn btn-info">My Gallery</button></a>
-  </li>
 </ul>

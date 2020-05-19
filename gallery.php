@@ -1,11 +1,11 @@
 <?php 
 session_start();
+$pageTitle = 'gallery';
 require_once 'inc/functions.inc.php';
 require_once 'inc/header.inc.php';
-require_once 'inc/nav.inc.php';
 require_once 'inc/file_uploader.inc.php';
+require_once 'inc/nav.inc.php';
 // home.php
-$pageTitle = 'gallery';
 ?>
 <div id="message"></div>
 <div class="container">
@@ -29,7 +29,7 @@ $pageTitle = 'gallery';
                         </div>
                         <div class="dropzone-wrapper">
                             <div class="dropzone-desc">
-                            <p>Click here or drag in a file for upload</p>
+                            <p><strong>Click here</strong> or drag in a file for upload</p>
                             </div>
                             <input type="file" name="file_upload" class="dropzone">
                         </div>
@@ -42,7 +42,7 @@ $pageTitle = 'gallery';
                     <button type="submit" class="btn btn-info btn-block pull-right">Upload</button>
                     <?php
                     if (!empty($message)) {
-                        echo "<p id=\"alert\" class=\"alert alert-primary mt-4\">{$message}</p>";
+                        echo "<br><p id=\"alert\" class=\"alert alert-info mt-4 text-center\">{$message}</p>";
                     }
                     ?>
                 </div>

@@ -13,7 +13,7 @@ $pageTitle = 'gallery';?>
                             <div class="box box-solid">
                                 <div class="box-header with-border">
                                     <div><img src="img\imagegallerylogo.png" alt="Image Gallery Logo"></div>
-                                    <div><b><h1>Welcome, <?= isset($_SESSION['first_name']) ? $_SESSION['first_name'] : 'New User!' ?></h1></b></div>
+                                    <div><b><h1>Hello, <?= isset($_SESSION['first_name']) ? $_SESSION['first_name'] : 'User!' ?></h1></b></div>
                                     <br>
                                     <div><b>Register or Login <br>to Build Your Own Image Gallery</b></div>
                                 </div>
@@ -26,8 +26,10 @@ $pageTitle = 'gallery';?>
 <!-- image gallery -->
             <div class="row">
                 <div class="col-md-12">
-                    <a href="registration.php" role="button" class="btn btn-info btn-block pull-right">Register</a>
-                    <a href="login.php" role="button" class="btn btn-info btn-block pull-right">Login</a>
+                    <a href="gallery.php" id="mygallery" role="button" class="btn btn-info btn-block pull-right">My Gallery</a>
+                    <a href="registration.php" id="registerbtn" role="button" class="btn btn-info btn-block pull-right">Register</a>
+                    <a href="login.php" id="login" role="button" class="btn btn-info btn-block pull-right">Login</a>
+                    <a href="login.php" id="logout" role="button" class="btn btn-info btn-block pull-right">Logout</a>
                 </div>
             </div>
         </div>

@@ -75,6 +75,8 @@ fetch('helper/is_logged_in.php')
         const login = document.querySelector('#login')
         const logout = document.querySelector('#logout')
         const registerbtn = document.querySelector('#registerbtn')
+        const homebtn = document.querySelector('#homebtn')
+        const mygallery = document.querySelector('#mygallery')
         if (res.status == 'yes') {
             login.style.display = 'none'
             logout.style.display = 'inline-block'
@@ -98,5 +100,6 @@ fetch('helper/is_logged_in.php')
             login.style.display = 'inline-block'
             logout.style.display = 'none'
             registerbtn.style.display = 'inline-block'
+            mygallery.style.display = 'none'
         }
     })
