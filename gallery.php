@@ -20,7 +20,7 @@ require_once 'inc/nav.inc.php';
                                 <div class="box-header with-border">
                                     <div><img src="img\imagegallerylogo.png" alt="Image Gallery Logo"></div>
                                     <div><b><h1>Hello, <?= isset($_SESSION['first_name']) ? $_SESSION['first_name'] : 'New User!' ?></h1>
-</b></div>
+                                    </b></div>
                                     <br>
                                     <div><b>Upload Images to Build Your Gallery</b></div>
                                 </div>
